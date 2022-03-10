@@ -112,6 +112,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 try:
-    from songs.local_setting import *
+    from songs.local_settings import *
 except ImportError:
         pass
