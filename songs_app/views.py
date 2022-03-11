@@ -4,9 +4,9 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from .serializers import SongSerializer
 from .models import Song
-# from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404
 
-@api_view(['GET', 'POST'])
+@api_view(['GET', 'POST']) # handles calling the complete songlist or to create a song
 def songs_list(request):
     
     song = Song.objects.all()
