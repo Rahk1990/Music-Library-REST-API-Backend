@@ -6,5 +6,3 @@ urlpatterns = [
     path('', views.songs_list),
     path('<int:pk>/', views.song_detail),
 ]
-# music/'
-# music/<int:pk>/ 

@@ -6,7 +6,8 @@ from .serializers import SongSerializer
 from .models import Song
 from django.shortcuts import get_object_or_404
 
-@api_view(['GET', 'POST']) # handles calling the complete songlist or to create a song
+# handles calling the complete songlist or to create a song
+@api_view(['GET', 'POST']) 
 def songs_list(request):
     
     song = Song.objects.all()
